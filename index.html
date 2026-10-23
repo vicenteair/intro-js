@@ -104,24 +104,36 @@
                 <li>Externo</li>
             </ul>
 
-            <h3>JavaScript Inline</h3>
-            <p>Nessa abordagem, o JavaScript é escrito diretamente no atributo de um elemento HTML. Exemplo:</p>
+            <article>
+                <h3>JavaScript Inline</h3>
+                <p>Nessa abordagem, o JavaScript é escrito diretamente no atributo de um elemento HTML. Exemplo:</p>
+                <button type="button" onclick="alert('Olá, mundo!')">Clique aqui para mostrar a mensagem</button>
+            </article>
 
-            <button type="button" onclick="alert('Olá, mundo!')">Clique aqui para mostrar a mensagem</button>
+            <article>
+                <h3>JavaScript Interno</h3>
+                <p>Nessa abordagem o JavaScript é escrito dentro da tag <code>&lt;script&gt;</code>, no próprio HTML. Exemplo:</p>
+                <button type="button" id="botao">Trocar cor de fundo do site</button>
+            </article>
 
-            <hr>
-
-            <h3>JavaScript Interno</h3>
-            <p>Nessa abordagem o JavaScript é escrito dentro da tag <code>&lt; script &gt;</code>, no próprio HTML. Exemplo:</p>
-            <button type="button" id="botao">Trocar cor de fundo do site</button>
+            <article>
+                <h3>JavaScript Externo</h3>
+                <p>Nessa abordagem, o JavaScript é escrito em um arquivo separado, utilizando a extensão .js, sendo configurado no atributo src da tag <code>&lt;script&gt;</code>. Exemplo: as mensagens são exibidas no console do navegador (F12).</p>
+            </article>
         </section>
     </main>
 
+    <!-- JavaScript Interno -->
     <script>
         const botao = document.querySelector("#botao")
 
-        botao.addEventListener("click", function(){document.body.style.backgroundColor = "red"      
+        botao.addEventListener("click", function () {
+            document.body.style.backgroundColor = "#e76f6f"
         })
     </script>
+
+    <!-- JavaScript Externo -->
+    <script src="ola-mundo.js"></script>
+    <script src="01-variaveis.js"></script>
 </body>
 </html>
