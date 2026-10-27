@@ -47,6 +47,25 @@ console.log(estaLogado)
 console.log(temPermissao)
 
 
+// 5 - Undefined (Indefinido)
+// Representa um valor que não foi definido.
+// É comum encontrar quando uma variável foi declarada sem receber um valor inicial
+let fruta;
 
+// 6 - Null
+// Representa a ausencia intencional de um valor.
+// No exemplo abaixo, estamos indicando de forma explicita que não há uma foto de perfil associada naquele momento
+let fotoPerfil = null;
+console.log(fotoPerfil)
+
+fotoPerfil = "foto-perfil.png"
+console.log(fotoPerfil)
+
+// 7 - Symbol
+// Utilizamos esse elemento para criar identificadores únicos
+const id1 = Symbol("id")
+const id2 = Symbol("id")
+
+console.log(id1 === id2)
 
 
